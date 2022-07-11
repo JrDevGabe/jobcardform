@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Grop - Job Card Schedule</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="schedule-job-body">
+            <div class="schedule-job-content">
+                <div class="schedule-job-brand">
+                    <h1>VirtualGroup</h1>
+                </div>
+                <div class="form-section">
+                    <div class="inner-form-section">
+                        <form action="#" id="job-card-scheduler">
+                            <div id="clientInfoPage InfoPage">
+                                <span>Client Information</span>
+                                <div class="form-group">
+                                    <label for="clientName">
+                                        Name
+                                    </label>
+                                    <input type="text" name="clientName" placeholder="Joe Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="clientDesignation">
+                                        Designation
+                                    </label>
+                                    <input type="text" name="clientDesignation" placeholder="">
+                                </div>
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="clientAddress">
+                                            Email
+                                        </label>
+                                        <input type="email" name="clientEmail" placeholder="im@companyname.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="clientAddress">
+                                            Phone
+                                        </label>
+                                        <input type="tel" name="clientPhone" placeholder="+27 83 658 9425">
+                                    </div>
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="clientAddress">
+                                        Address
+                                    </label>
+                                    <input type="text" name="clientAddress"
+                                        placeholder="12 Str. Name, Building Name, City, State, Zip Code">
+                                </div>
+                                <div class="form-button">
+                                    <button class="next" id="firstNext">
+                                         Next
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="InfoPage">
+                                <div class="actions">
+                                    <div class="backbutton">
+                                        <svg class="icon-color"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <path
+                                          d="M1.02698 11.9929L5.26242 16.2426L6.67902 14.8308L4.85766 13.0033L22.9731 13.0012L22.9728 11.0012L4.85309 11.0033L6.6886 9.17398L5.27677 7.75739L1.02698 11.9929Z"
+                                          
+                                        />
+                                      </svg>
+                                    </div>
+                                </div>
+                                <span>Work Order Details</span>
+                                <div class="form-group">
+                                    <label for="workOrderDetails">
+                                        Work Order Details
+                                    </label>
+                                    <textarea name="workOrderDetails"  cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="file" name="workOrderPhotos" multiple accept="image/*">
+                                    <label for="workOrderPhotos">
+                                        Photos
+                                    </label>
+                                </div>
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="clientAddress">
+                                            Arrival Time
+                                        </label>
+                                        <input type="time" name="clientEmail" min="09:00" max="17:00">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="clientAddress">
+                                            Completion Time
+                                        </label>
+                                        <input type="time" name="clientPhone"  min="09:00" max="17:00">
+                                    </div>
+                                </div>
+                                <div class="form-button">
+                                    <button class="next" id="firstNext">
+                                         Next
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="InfoPage">
+                                <div class="actions">
+                                    <div class="backbutton">
+                                        <svg class="icon-color"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <path
+                                          d="M1.02698 11.9929L5.26242 16.2426L6.67902 14.8308L4.85766 13.0033L22.9731 13.0012L22.9728 11.0012L4.85309 11.0033L6.6886 9.17398L5.27677 7.75739L1.02698 11.9929Z"
+                                        />
+                                      </svg>
+                                    </div>
+                                </div>
+                                <span>Future Required Actions</span>
+                                <div class="form-group">
+                                    <textarea name="futureRequiredActions"  cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="form-button">
+                                    <button type="submit" class="next" id="firstNext">
+                                         Schedule Your Job Card
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/index.js"></script>
+</body>
+
+</html>
