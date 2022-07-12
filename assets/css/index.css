@@ -5,6 +5,7 @@
 	box-sizing: border-box;
 	word-wrap: break-word;
 	font-family: 'Albert Sans', sans-serif;
+	line-height: 1.9;
 }
 
 :root {
@@ -15,161 +16,114 @@
 }
 
 body {
-	min-height: 100%;
-	background: var(--virtual-white);
+	margin: 32px;
+	background: #FFF;
 }
 
+header, main {
+	margin: 1rem;
+}
+#report-header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 32px 0px;
+
+}
+.contact-header {
+	margin: 16px;
+}
+.contact-header span
+{
+	font-size: 14px;
+	color: var(--virtual-black);
+	font-weight: 800;
+
+}
+header figure img {
+	width: auto;
+	height: 9.375em;
+}
+svg{
+	outline: 2px solid var(--virtual-red);
+	padding: 8px;
+	border-radius: 50%;
+}
+#header-title
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: -1px;
+}
+#header-title p span {
+	font-size: 1.25rem;
+	color: var(--virtual-red);
+	letter-spacing: normal;
+}
+
+p {
+	font-size: 1rem;
+	font-style: 400;
+
+}
+.contact-header {
+	display: flex;
+	align-items: center;
+}
+.virtual-icon
+{
+	width: 32px;
+	height: 32px;
+	stroke: var(--virtual-red);
+	margin: 0 16px;
+}
+
+.job-Information h2
+{
+	padding: 8px 0px 8px 16px;
+    background: var(--virtual-white);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 16px 0;
+	font-size: 20px;
+}
+
+label {
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: -1px;
+	color: var(--virtual-red);
+}
 ::selection {
 	color: var(--virtual-white);
 	background: var(--virtual-black);
 }
-
-h1 {
-	font-size: 2rem;
-	color: var(--virtual-red);
-}
-
-.container {
+.clientInfoBody{
 	display: flex;
-	width: 100%;
-	min-height: 100vh;
-	overflow: hidden;
+    justify-content: space-between;
+	margin: 8px 32px
 }
-
-.schedule-job-body {
-
-	display: flex;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	min-height: 100vh;
-	flex-grow: 1;
+.clientInfoBody p {
 }
-
-.schedule-job-content {
-
-	padding: 24px 0 0 0;
-	display: flex;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	flex-grow: 1;
-	z-index: 9;
-}
-
-.schedule-job-brand {
-	padding: 48px 0px 24px 0px;
-	display: flex;
-	-ms-flex-pack: center;
-	justify-content: center;
-}
-
-.form-section {
-	margin: 0px auto;
-	width: 100%;
-	max-width: 56rem;
-	border-radius: 8px;
-	/* box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px,
-				rgba(0, 0, 0, 0.12) 0px 3px 6px 0px; */
-}
-
-.inner-form-section {
-	padding: 3rem;
-}
-
-span {
-	display: block;
-	font-size: 1.25rem;
-	line-height: 1.75rem;
-	color: var(--virtual-black);
-	font-weight: 600;
-	padding: 0 0 15px 0;
-}
-
-.form-group {
-	padding: 0 0 1.5rem 0;
-}
-
-label {
-	font-size: 14px;
-	font-weight: 600;
-	display: block;
-	margin: 0 0 10px 0;
-}
-
-#firstNext,
-input {
-	font-size: 1rem;
-	line-height: 1.75rem;
-	padding: 8px 16px;
-	width: 100%;
-	min-height: 44px;
-	border: unset;
-	border-radius: 8px;
-	outline-color: hsl(0, 2%, 47%);
-}
-
-#firstNext {
-	background-color: var(--virtual-red);
-}
-
-.form-button {
-	padding: 0 0 24px 0;
-}
-
-button {
-	box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-		rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, hsl(0, 84%, 54%) 0px 0px 0px 2px,
-		rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-		rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
-	color: #fff;
-	font-weight: 600;
-	cursor: pointer;
-}
-
-.actions {
+.virtual-group {
 	display: flex;
 	justify-content: space-between;
-	margin: 0 0 32px 0;
-	padding: 20px 14px 16px 20px;
-	background: var(--virtual-red);
-	width: 64px;
-	border-radius: 50%;
 }
-
-.icon-color {
-	fill: var(--virtual-white);
+.virtual-group .clientInfoBody {
+	width: 50%;
 }
-
-input[type="file"] {
-	height: 0;
-	overflow: hidden;
-	width: 0;
-}
-
-input[type="file"]
+.clientInfoBody #phone
 {
-	background: var(--virtual-red);
-	border: none;
-	border-radius: 0.5rem;
-	color: var(--virtual-white);
-	cursor: pointer;
-	display: inline-block;
-	font-size: 14px;
-	font-weight: 600;
-	outline: none;
-	padding:1rem 50px;
-	position: relative;
-	transition: all 0.3s;
-	vertical-align: middle;
+	margin-right: 16px;
 }
-textarea {
-	display: block;
-	padding: 0.625rem;
-	color: #111827;
-	font-size: 0.875rem;
-	line-height: 1.25rem;
-	width: 100%;
-	border-radius: 0.5rem;
-	border-width: 1px;
-	border-color: #D1D5DB;
-	outline-color: hsl(0, 2%, 47%);
+#workOrderDetails p , #requiredFutureActions p {
+	margin: 8px 32px;
+	text-align: justify;
 }
